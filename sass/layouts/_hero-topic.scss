@@ -1,0 +1,36 @@
+.hero-topic {
+    padding: 94px 0;
+}
+.hidden-title {
+	display: none;
+}
+.advantages {
+    display: flex;
+    gap: 30px;
+}
+.advantages__primaryTools {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--second-primary-color);
+    
+    margin-bottom: 10px
+}
+.advantages__secondaryTools {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--color-p-text);
+}
+.advantages__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background: #F5F4FA;
+}

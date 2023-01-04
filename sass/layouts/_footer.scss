@@ -1,0 +1,188 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
+}
+.footer-container {
+    display: flex;
+}
+// ---------------------BEm_1-------------//
+.footer-contacts__logo {
+    color: var(--primary-header-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.footer-contacts__logo-blue{
+    color: var(--logo-color-button);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    
+}
+.footer-contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+.footer-contacts__street {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover,
+    &:focus {
+    color: var(--logo-color-button);
+    }
+}
+
+
+.footer-contacts__link {
+    display: block;
+    padding: 32px 0;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--color-p-text);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--logo-color-button);
+    }
+}
+
+// --------------------------BEM-2---------------////
+.footer-acction {
+    display: block;
+    margin-left: 70px;
+    margin-top: 12px;
+}
+
+.footer-acction__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.footer-acction__list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.footer-acction__items {
+    height: 44px;
+    width: 44px;
+}
+
+.footer-acction__link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #44454E;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+        background-color: var(--logo-color-button);
+    }
+}
+.footer-acction__icon {
+    fill: #FFFFFF;
+}
+
+
+
+// -----------------JOING-US-------------------//
+.joining {
+    display: flex;
+    margin-left: auto;
+    margin-top: 12px;
+
+
+}
+.joining__title {
+    display: block;
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.22;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
+.joining__placeholder {
+    width: 358px;
+    padding: 15px;
+
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+    
+        border-color: var(--primary-header-color);
+    }
+}
+
+.joining__button {
+    position: relative;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 62px 10px 28px;
+    margin-left: 12px;
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+   
+    color: #FFFFFF;
+    background-color: var(--logo-color-button);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    cursor: pointer;
+
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.joining__svg {
+    position: absolute;
+    top: 12px;
+    right: 28px;
+    
+}
