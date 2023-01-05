@@ -1,8 +1,5 @@
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    /* outline: 2px solid tomato; */
+    width: 100%;
     padding-right: 15px;
     padding-left: 15px;
 }
@@ -10,3 +7,14 @@
     display: flex;
     align-items: center;
 }
+  //  @media  screen and (min-width: 480px) {
+    //     width: 480px;
+    // }
+
+    // @media screen and (min-width: 768px) {
+    //     width: 768px;
+    // }
+
+    // @media screen and (min-width: 1200px) {
+    //     width: 1200px;
+    // }
