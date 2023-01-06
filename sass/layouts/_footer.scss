@@ -8,17 +8,19 @@
     display: block;
     text-align: center;
 
+   
+
     @include desktop {
     display: flex;
     }
 }
-
 .footer-contacts {
     @include tablet {
-        display: block;
-        
+
+        padding-left: 60px;
     }
 }
+
 // ---------------------BEm_1-------------//
 .footer-contacts__logo {
     color: var(--primary-header-color);
@@ -81,13 +83,25 @@
 
 // --------------------------BEM-2---------------////
 .footer-acction {
-    text-align: center;
+    
     margin-top: 60px;
+
+    @include tablet {
+        margin-left: 165px;
+        margin-top: 0;
+        
+    }
 
     @include desktop {
     display: block;
     margin-left: 70px;
     margin-top: 12px;
+    }
+}
+.tablet-container {
+    @include tablet {
+        display: flex;
+        
     }
 }
 
@@ -178,6 +192,9 @@
     
         border-color: var(--primary-header-color);
     }
+    @include tablet {
+        width: 450px;
+    }
     @include desktop {
 
    
@@ -213,10 +230,16 @@
     &:hover {
         transform: scale(1.1);
     }
+    @include tablet {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
 
+    }
     @include desktop {
         margin-left: 12px;
         margin-top: 0;
+        display: inline;
     }
 }
 

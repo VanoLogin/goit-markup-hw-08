@@ -1,5 +1,6 @@
 @import "./base/reset";
 @import "./utils/mixin";
+@import "./utils/placeholder";
 @import "./components/container";
 @import "./utils/vars";
 @import './components/btn';
@@ -8,6 +9,7 @@
 @import './layouts/hero-topic';
 @import './base/backdrop';
 @import './layouts/modal-icon';
+@import './layouts/header-modal';
 @import './layouts/operation';
 @import './layouts/comandos';
 @import './layouts/base-client';
