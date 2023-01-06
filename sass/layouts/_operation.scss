@@ -1,5 +1,12 @@
 .operation {
-    padding-bottom: 94px;
+    display: none;
+
+    @include desktop {
+        padding-bottom: 94px;
+        display: contents;
+    
+    }
+    
 }
 .operation__title {
     font-weight: 700;

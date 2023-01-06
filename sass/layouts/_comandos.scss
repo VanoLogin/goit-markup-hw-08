@@ -1,24 +1,57 @@
 .comandos {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #F5F4FA;
+
+    @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
-    background: #F5F4FA
+    background: #F5F4FA;
+
+    }
+    
+   
 }
 .comandos__hero {
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
     line-height: 1.16;
     text-align: center;
     margin-bottom: 50px;
+
+    @include desktop {
+        font-size: 36px;
+    }
 }
 .comandos__list {
-    display: flex;
+    display: block;
     justify-content: space-between;
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @include desktop {
+        display: flex;
+    }
+
 }
 .comandos__items {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     text-align: center;
+    margin-bottom: 30px;
+
+    @include tablet {
+        width: calc((100% - 60px)/2);
+        
+    }
+    @include desktop {
+        width: calc((100% - 60px)/4);
+    }
+
 }
 .comandos__title {
     font-weight: 500;

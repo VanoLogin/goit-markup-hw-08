@@ -2,19 +2,27 @@
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
+
+     @media  screen and (min-width: 480px) {
+        width: 480px;
+       
+        
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .flex {
     display: flex;
     align-items: center;
 }
-  //  @media  screen and (min-width: 480px) {
-    //     width: 480px;
-    // }
-
-    // @media screen and (min-width: 768px) {
-    //     width: 768px;
-    // }
-
-    // @media screen and (min-width: 1200px) {
-    //     width: 1200px;
-    // }
+  

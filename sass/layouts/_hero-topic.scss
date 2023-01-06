@@ -1,5 +1,9 @@
 .hero-topic {
-    padding: 94px 0;
+    padding: 60px 0;
+
+    @include desktop {
+        padding: 94px 0;
+    }
 }
 .hidden-title {
 	display: none;
@@ -7,11 +11,32 @@
 .advantages {
     display: flex;
     flex-wrap: wrap;
+    @include desktop {
+        justify-content: space-around;
+        display: flex;
+    }
 }
 .advantages__unit {
     width: 100%;
     display: block;
+
+    @include tablet {
+        width: calc((100% - 60px) / 2);
+    
+    }
+    @include desktop {
+        width: calc((100% - 90px) / 4);
+        
+    }
 }
+@include tablet {
+    .advantages__unit:nth-child(odd) {
+        margin-right: 30px;
+        
+    }
+   
+}
+
 .advantages__primaryTools {
     font-weight: 700;
     font-size: 14px;
@@ -20,6 +45,13 @@
     text-transform: uppercase;
     color: var(--second-primary-color);
     margin-bottom: 10px;
+
+    text-align: center;
+
+    @include tablet {
+        text-align: start;
+    }
+
 }
 .advantages__secondaryTools {
     font-weight: 400;
@@ -27,6 +59,8 @@
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--color-p-text);
+
+    margin-bottom: 30px;
 }
 .advantages__icon {
     display: flex;

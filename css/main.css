@@ -52,25 +52,41 @@ a {
   list-style-type: none;
 }
 
-:root {
-  --primary-header-color: #FFFFFF;
-  --second-primary-color: #212121;
-  --logo-color-button: #2196F3;
-  --color-p-text: #757575;
-}
-
 .container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  /* outline: 2px solid tomato; */
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .flex {
   display: flex;
   align-items: center;
+}
+
+:root {
+  --primary-header-color: #FFFFFF;
+  --second-primary-color: #212121;
+  --logo-color-button: #2196F3;
+  --color-p-text: #757575;
 }
 
 .button {
@@ -199,7 +215,12 @@ a {
 }
 
 .hero-topic {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .hero-topic {
+    padding: 94px 0;
+  }
 }
 
 .hidden-title {
@@ -208,9 +229,35 @@ a {
 
 .advantages {
   display: flex;
-  gap: 30px;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    justify-content: space-around;
+    display: flex;
+  }
 }
 
+.advantages__unit {
+  width: 100%;
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .advantages__unit {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages__unit {
+    width: calc((100% - 90px) / 4);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages__unit:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
 .advantages__primaryTools {
   font-weight: 700;
   font-size: 14px;
@@ -219,6 +266,12 @@ a {
   text-transform: uppercase;
   color: var(--second-primary-color);
   margin-bottom: 10px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .advantages__primaryTools {
+    text-align: start;
+  }
 }
 
 .advantages__secondaryTools {
@@ -227,6 +280,7 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--color-p-text);
+  margin-bottom: 30px;
 }
 
 .advantages__icon {
@@ -417,7 +471,13 @@ textarea {
 }
 
 .operation {
-  padding-bottom: 94px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .operation {
+    padding-bottom: 94px;
+    display: contents;
+  }
 }
 
 .operation__title {
@@ -461,22 +521,45 @@ textarea {
 }
 
 .comandos {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #F5F4FA;
+}
+@media screen and (min-width: 1200px) {
+  .comandos {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background: #F5F4FA;
+  }
 }
 
 .comandos__hero {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1200px) {
+  .comandos__hero {
+    font-size: 36px;
+  }
+}
 
 .comandos__list {
-  display: flex;
+  display: block;
   justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  .comandos__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comandos__list {
+    display: flex;
+  }
 }
 
 .comandos__items {
@@ -484,6 +567,17 @@ textarea {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .comandos__items {
+    width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comandos__items {
+    width: calc((100% - 60px) / 4);
+  }
 }
 
 .comandos__title {
@@ -541,22 +635,34 @@ textarea {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+  }
+}
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -694,7 +800,19 @@ textarea {
 }
 
 .footer-container {
-  display: flex;
+  display: block;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    display: block;
+  }
 }
 
 .footer-contacts__logo {
@@ -752,9 +870,15 @@ textarea {
 }
 
 .footer-acction {
-  display: block;
-  margin-left: 70px;
-  margin-top: 12px;
+  text-align: center;
+  margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-acction {
+    display: block;
+    margin-left: 70px;
+    margin-top: 12px;
+  }
 }
 
 .footer-acction__title {
@@ -769,8 +893,15 @@ textarea {
 
 .footer-acction__list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-acction__list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+  }
 }
 
 .footer-acction__items {
@@ -797,9 +928,15 @@ textarea {
 }
 
 .joining {
-  display: flex;
-  margin-left: auto;
-  margin-top: 12px;
+  display: block;
+  margin-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .joining {
+    display: flex;
+    margin-left: auto;
+    margin-top: 12px;
+  }
 }
 
 .joining__title {
@@ -814,7 +951,7 @@ textarea {
 }
 
 .joining__placeholder {
-  width: 358px;
+  width: 100%;
   padding: 15px;
   color: rgba(255, 255, 255, 0.6);
   background-color: #2F303A;
@@ -830,14 +967,19 @@ textarea {
 .joining__placeholder:focus {
   border-color: var(--primary-header-color);
 }
+@media screen and (min-width: 1200px) {
+  .joining__placeholder {
+    width: 358px;
+  }
+}
 
 .joining__button {
+  margin-top: 20px;
   position: relative;
   display: inline;
   align-items: center;
   justify-content: center;
   padding: 10px 62px 10px 28px;
-  margin-left: 12px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -853,6 +995,12 @@ textarea {
 }
 .joining__button:hover {
   transform: scale(1.1);
+}
+@media screen and (min-width: 1200px) {
+  .joining__button {
+    margin-left: 12px;
+    margin-top: 0;
+  }
 }
 
 .joining__svg {
