@@ -29,8 +29,8 @@ li, ul, h1, h2, a {
 }
 
 img {
+  width: 100%;
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
@@ -191,11 +191,12 @@ a {
 }
 
 .contacts__item:nth-child(1) {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 1200px) {
   .contacts__item:nth-child(1) {
     margin-right: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -272,17 +273,24 @@ a {
 
 .hero__title {
   font-weight: 900;
-  font-size: 22px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-header-color);
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    height: 84px;
+    width: 360px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
     margin: 0 auto 30px;
     width: 696px;
+    height: auto;
   }
 }
 
@@ -385,8 +393,8 @@ a {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  height: 100%;
   position: relative;
   top: 55%;
   left: 50%;
@@ -396,6 +404,18 @@ a {
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    height: 609px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__close {
@@ -573,7 +593,6 @@ textarea {
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-around;
 }
 @media screen and (min-width: 768px) {
   .page-header .container-tablet {
@@ -619,7 +638,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
+  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -689,7 +708,7 @@ textarea {
 .contacts-modal {
   display: block;
   position: absolute;
-  bottom: 48px;
+  bottom: 55px;
   font-weight: 500;
   font-size: 24px;
   line-height: 28px;
@@ -699,7 +718,7 @@ textarea {
 
 .modal__contacts {
   font-weight: 500;
-  font-size: 22px;
+  font-size: 28px;
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: var(--logo-color-button);
@@ -710,7 +729,36 @@ textarea {
 }
 
 .modal__contacts--grey {
-  font-size: 20px;
+  font-size: 22px;
+  color: #757575;
+}
+
+.mobiles__links {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 20px;
+}
+
+.mobiles__links--blue {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--logo-color-button);
+}
+
+.mobiles__links--dash::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  width: 22px;
+  height: 2px;
+  color: red;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
 }
 
 .operation {
@@ -820,6 +868,15 @@ textarea {
 @media screen and (min-width: 1200px) {
   .comandos__items {
     width: calc((100% - 60px) / 4);
+    margin-bottom: 0;
+  }
+}
+.comandos__items:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .comandos__items:nth-last-child(-n+2) {
+    margin-bottom: 0px;
   }
 }
 
@@ -913,7 +970,7 @@ textarea {
 
 .clients__link {
   box-sizing: border-box;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -924,6 +981,17 @@ textarea {
 }
 .clients__link:hover {
   border-color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+    height: 92px;
+  }
 }
 
 .clients__icon {

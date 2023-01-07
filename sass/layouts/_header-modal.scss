@@ -22,7 +22,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    
     
     @include tablet {
         min-height: 80px;
@@ -66,8 +66,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-  
-    margin: 0;
+    
+    margin-left: auto;
     padding: 0;
     background-color: transparent;
     cursor: pointer;
@@ -140,7 +140,7 @@
 .contacts-modal {
     display: block;
     position: absolute;
-    bottom: 48px;
+    bottom: 55px;
     font-weight: 500;
     font-size: 24px;
     line-height: 28px;
@@ -151,7 +151,7 @@
 }
 .modal__contacts {
     font-weight: 500;
-    font-size: 22px;
+    font-size: 28px;
     line-height: 1.16;
     letter-spacing: 0.02em;
 
@@ -163,5 +163,40 @@
 }
 
 .modal__contacts--grey {
-    font-size: 20px;
+    font-size: 22px;
+    color: #757575;
+
 }
+
+
+// -------------------Mobile-Small-LINK--------//
+.mobiles__links {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  gap: 20px;
+}
+.mobiles__links--blue {
+
+
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--logo-color-button);
+}
+.mobiles__links--dash::after {
+  
+  content: "";
+  
+  position: absolute;
+  bottom: 10px;
+  width: 22px;
+  height: 2px;
+  color: red;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  transform: rotate(90deg);
+}
+

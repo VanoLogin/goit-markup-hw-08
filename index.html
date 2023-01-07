@@ -103,13 +103,20 @@
                     <ul class="operation_list">
                         <li class="operation__items">
                         <p class="operation__development">Десктопні додатки</p>
-                        <img src="./images/image_14.jpg" alt="development" width="370" height="294"></li>
+                        <picture>
+                            <source srcset="./images/images_14.jpg 1x, ./images/images_14-2x.jpg 2x" media="(min-width:1200px)">
+                            <img src="./images/images_14.jpg" alt="development" width="370" height="294"></picture>
+                        </li>
                         <li class="operation__items">
                         <p class="operation__development">Мобільні додатки</p>
-                        <img src="./images/images_2.jpg" alt="digitalization" width="370" height="294"></li>
+                        <picture>
+                            <source srcset="./images/images_3.jpg 1x, ./images/images_3-2x.jpg 2x" media="(min-width:1200px)">
+                            <img src="./images/images_3.jpg" alt="development" width="370" height="294"></picture></li>
                         <li class="operation__items">
                         <p class="operation__development">Дизайнерські рішення</p>
-                        <img src="./images/images_3.jpg" alt="design" width="370" height="294"></li>
+                        <picture>
+                            <source srcset="./images/images_2.jpg 1x, ./images/images_2-2x.jpg 2x" media="(min-width:1200px)">
+                            <img src="./images/images_2.jpg" alt="development" width="370" height="294"></picture></li>
                     </ul>
                 </div>
             </section>
@@ -299,11 +306,19 @@
               <li><a href="" class="link">Контакти</a></li>
             </ul>
             <ul class="contacts-modal">
-                <li class="contacts__item">
-                    <a href="mailto:info@devstudio.com" class=" modal__contacts">info@devstudio.com</a></li>
                 <li class="contacts__item contacts__item-contacts">
-                    <a href="tell:+380961111111" class="contacts__link modal__contacts--grey">+38 096 111 11 11</a></li>
+                    <a href="tell:+380961111111" class="contacts__link modal__contacts">+38 096 111 11 11</a></li>
+                <li class="contacts__item">
+                    <a href="mailto:info@devstudio.com" class="modal__contacts--grey link">info@devstudio.com</a></li>
+
+                
                 </ul>
+            <ul class="mobiles__links">
+                <li class="link"><a href="" class="mobiles__links--blue mobiles__links--dash ">Instagram</a></li>
+                <li class="link"><a href="" class="mobiles__links--blue mobiles__links--dash ">Twitter</a></li>
+                <li class="link"><a href="" class="mobiles__links--blue mobiles__links--dash ">Facebook</a></li>
+                <li class="link"><a href="" class="mobiles__links--blue ">LinkedIn</a></li>
+            </ul>
           </div>
         <script src="./js/modal.js"></script>
         <script

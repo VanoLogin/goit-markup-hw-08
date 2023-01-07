@@ -34,18 +34,23 @@
    
 .hero__title {
     font-weight: 900;
-    font-size: 22px;
+    font-size: 26px;
     
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--primary-header-color);
+    @include tablet {
+        height: 84px;
+        width: 360px;
     
+    }
    
     @include desktop {
         font-size: 44px;
         margin: 0 auto 30px;
         width: 696px;
+        height: auto;
     }
 }
 .hero .button  {

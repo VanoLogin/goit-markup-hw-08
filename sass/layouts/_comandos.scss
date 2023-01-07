@@ -43,16 +43,26 @@
     border-radius: 0px 0px 4px 4px;
     text-align: center;
     margin-bottom: 30px;
-
+    
     @include tablet {
         width: calc((100% - 60px)/2);
         
     }
     @include desktop {
         width: calc((100% - 60px)/4);
+        margin-bottom: 0; 
+    }
+    &:last-child {
+        margin-bottom: 0;   
+    }
+    &:nth-last-child(-n+2) {
+        @include tablet {
+        margin-bottom: 0px;
+        }
     }
 
 }
+
 .comandos__title {
     font-weight: 500;
     font-size: 16px;
