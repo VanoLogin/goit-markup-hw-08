@@ -55,11 +55,7 @@
     text-decoration: none;
   }
   
-  .menu .link:hover,
-  .menu .link:focus {
-    text-decoration: underline;
-  }
-  
+
   .menu-toggle {
     min-height: 40px;
     min-width: 40px;
@@ -120,7 +116,7 @@
     list-style: none;
   }
   
-  .mobile-menu .link {
+  .mobile__items {
     display: block;
     margin-bottom: 25px;
     padding: 5px;
@@ -137,6 +133,10 @@
         color: var(--logo-color-button)
     }
   }
+
+.mobile__items--active {
+  color: var(--logo-color-button);
+}
 .contacts-modal {
     display: block;
     position: absolute;
