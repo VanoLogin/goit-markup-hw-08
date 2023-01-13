@@ -107,6 +107,49 @@ a {
   padding: 10px 24px;
 }
 
+body {
+  background-color: #85A279;
+}
+
+.mobile-menu {
+  background-color: #85A279;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.mobile-menu__nav {
+  margin-top: 100px;
+}
+
+.mobile-menu__items {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.21;
+  color: #FCFCFC;
+}
+.mobile-menu__items:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__button {
+  background: #F8D24E;
+  border-radius: 10px;
+  padding: 12px 51px 12px 36px;
+  border-style: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  color: #000000;
+  position: absolute;
+  bottom: 64px;
+  transform: translateX(-50%);
+}
+
 .page-header {
   background-color: var(--primary-header-color);
   border-bottom: 1px solid #ECECEC;
@@ -235,7 +278,6 @@ a {
 }
 
 .hero {
-  text-align: center;
   padding: 118px 0px;
   background-color: #2F303A;
   text-align: center;
